@@ -46,6 +46,7 @@ Options:
 ## Loading the PyTorch model
 ```python
 import torch
+import imp
 # need filepath to network created from mmdnn converter
 # because it has the model class defined
 MainModel = imp.load_source('MainModel', "SpotGarbage_GarbNet/pytorch_garbnet.py")
