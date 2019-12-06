@@ -148,6 +148,8 @@ class BalloonDataset(utils.Dataset):
             one mask per instance.
         class_ids: a 1D array of class IDs of the instance masks.
         """
+        import pdb
+        pdb.set_trace()
         # If not a balloon dataset image, delegate to parent class.
         image_info = self.image_info[image_id]
         if image_info["source"] != "garbage":
