@@ -99,9 +99,13 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     """
     # Number of instances
     N = boxes.shape[0]
+    print("value of number of boxes")
+    print(N)
     if not N:
         print("\n*** No instances to display *** \n")
     else:
+        print("=====shapes=====")
+        print(boxes.shape, masks.shape, class_ids.shape)
         assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
 
     # If no axis is passed, create one and automatically call show()
