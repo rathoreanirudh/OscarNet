@@ -1,4 +1,4 @@
-# image_segmentation_spot_garbage
+# OscarNet
 Applying image segmentation techniques on the popular Spot Garbage dataset
 
 
