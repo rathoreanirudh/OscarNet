@@ -17,5 +17,9 @@ install pycocotools -- git clone git@github.com:cocodataset/cocoapi.git
       
       
       
-# Results
-[image](./data/results/bb_can.jpg)      
+### A few results from our trained model
+<img src="https://github.com/rathoreanirudh/OscarNet/blob/master/data/results/bb_can.jpg" height="480" width="480">
+<img src="https://github.com/rathoreanirudh/OscarNet/blob/master/data/results/bb_red_trash.jpg" height="480" width="480">
+<img src="https://github.com/rathoreanirudh/OscarNet/blob/master/data/results/bb_chips.jpg" height="480" width="580">
+<img src="https://github.com/rathoreanirudh/OscarNet/blob/master/data/results/hunteroutput.png" height="480" width="580">
+<img src="https://github.com/rathoreanirudh/OscarNet/blob/master/data/results/splash_chips.jpg" height="480" width="580">
