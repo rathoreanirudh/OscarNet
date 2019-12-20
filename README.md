@@ -14,3 +14,8 @@ install pycocotools -- git clone git@github.com:cocodataset/cocoapi.git
                         make # might be not necessary
                         python setup.py build
                         python setup.py install
+      
+      
+      
+# Results
+[image](./data/results/bb_can.jpg)      
