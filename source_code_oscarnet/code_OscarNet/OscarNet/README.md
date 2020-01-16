@@ -1,8 +1,8 @@
 # Color Splash Example
 
 This is an example showing the use of Mask RCNN in a real application.
-We train the model to detect balloons only, and then we use the generated 
-masks to keep balloons in color while changing the rest of the image to
+We train the model to detect garbage only, and then we use the generated 
+masks to keep garbage in color while changing the rest of the image to
 grayscale.
 
 
