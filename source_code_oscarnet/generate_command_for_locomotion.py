@@ -14,8 +14,6 @@ sys.path.append(DEPTHDIR)
 import get_depth_in_meters as gdim
 import code_OscarNet.OscarNet.garbage_detection as get_mask
 
-#image_path = "/home/shivendra/Downloads/himanshu_test/7XRNH2UIXUI6DAESRAMLQIIEU4.jpg"
-#weights_path = "/home/shivendra/Downloads/himanshu_test/Mask_RCNN/mask_rcnn_oscarnet.h5"
 
 class GetMaskConfig(get_mask.GarbageDetectionConfig):
     # Set batch size to 1 since we'll be running inference on
@@ -24,7 +22,6 @@ class GetMaskConfig(get_mask.GarbageDetectionConfig):
     IMAGES_PER_GPU = 1
 
 config = GetMaskConfig()
-
 
 def calculate_depth_matrix(image_path):
     depth_matrix = gdim.return_depth_meter_np_array(image_path)
@@ -39,7 +36,6 @@ def generate_masks(weights_path, image_path):
     predicted_masks_matrix = predicted_masks_matrix.transpose(1,0,2)
     print("Shape of Mask matrix: " +  str(predicted_masks_matrix.shape)) 
     return predicted_masks_matrix
-
 
 def is_mask(predicted_mask_matrix, x, y):
     a, b, c = predicted_mask_matrix.shape
@@ -131,8 +127,6 @@ def find_action(weights_path, image_path):
     action = calculate_locomotion_direction(min_depth_points, min_depth, image_size)
     return action
 
-prev = time()
-delta = 59
 if __name__ == "__main__":
 
     # Parse command line arguments
@@ -150,6 +144,9 @@ if __name__ == "__main__":
     print("Recommended action")
     
     # pick up an image to get the direction
+    prev = time()
+    delta = 59
+
     while True:
         current = time()
         delta += current - prev

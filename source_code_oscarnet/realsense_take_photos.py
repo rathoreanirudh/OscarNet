@@ -49,7 +49,6 @@ try:
         
         previous = current 
 
-
         # Show images & capture images
         cv2.namedWindow('RealSense', cv2.WINDOW_AUTOSIZE)
         cv2.imshow('RealSense', color_image)
@@ -63,6 +62,5 @@ try:
         cv2.waitKey(1)
 
 finally:
-
     # Stop streaming
     pipeline.stop()
